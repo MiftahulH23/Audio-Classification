@@ -2,11 +2,11 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='flex justify-between px-8 py-3 bg-primary rounded-2xl'>
+    <div className='flex justify-between px-8 py-3 bg-white rounded-2xl'>
         <div>
-            <p className='text-[#FFD700]'>Rawr</p>
+            <p className='text-primary font-rock-salt text-xl'>Rawr</p>
         </div>
-        <div className='flex gap-5 font-semibold text-white'>
+        <div className='flex gap-5 font-semibold text-black'>
             <a href="#home">Home</a>
             <a href="#label">Label</a>
             <a href="#prediks">Prediksi</a>

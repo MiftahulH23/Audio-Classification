@@ -4,8 +4,8 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 
 import "./globals.css"
+import fonts from "@/app/font"
 
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Deep Learning",
@@ -22,7 +22,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${fonts.inter} ${fonts.rockSalt} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
