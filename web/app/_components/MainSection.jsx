@@ -14,10 +14,10 @@ const MainSection = () => {
   return (
     <div className="flex flex-col gap-6 relative">
       {/* element */}
-      <Image src={L1} className="absolute top-5 right-40 rotate-12 size-16 drop-shadow-xl" />
+      <Image src={L1} className="absolute top-14 right-40 rotate-12 size-16 drop-shadow-xl" />
       <Image src={L2} className="absolute top-20 left-40 -rotate-12 size-16 drop-shadow-xl" />
       <Image src={L3} className="absolute top-28 right-72 -rotate-12 size-16 drop-shadow-xl" />
-      <p className="text-center text-xl font-bold italic">
+      <p className="text-center text-3xl font-bold italic font-montserrat">
         Setiap senar yang dipetik adalah cerita yang tak terucapkan <br /> dan
         kami di sini untuk mendengarkan kisah itu
       </p>

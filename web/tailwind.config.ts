@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        montserrat: ["var(--font-montserrat)"],
         "rock-salt": ["var(--font-rock-salt)"],
       },
       colors: {

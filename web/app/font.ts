@@ -1,17 +1,19 @@
 import {
-  Bricolage_Grotesque,
-  Hanken_Grotesk,
   Inter,
-  Open_Sans,
-  Roboto_Mono,
+  Montserrat,
   Rock_Salt,
-  Syne,
 } from "next/font/google"
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+})
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
 })
 
 const rockSalt = Rock_Salt({
@@ -23,6 +25,7 @@ const rockSalt = Rock_Salt({
 
 const fonts = {
   inter: inter.variable,
+  montserrat: montserrat.variable,
   rockSalt: rockSalt.variable,
 }
 

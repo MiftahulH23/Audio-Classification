@@ -9,11 +9,10 @@ import MainSection from "./_components/MainSection"
 import Header from "./_components/Header"
 import Label from "./_components/Label"
 import AudioClassification from "./_components/audio-classification"
-import TextSentiment from "./_components/text-sentiment"
 
 export default function Home() {
   return (
-    <div className="bg-white h-fit px-6 py-4 flex flex-col gap-5">
+    <div className="bg-white h-fit px-6 py-4 flex flex-col gap-8">
       <Header />
       <MainSection />
       <Label />

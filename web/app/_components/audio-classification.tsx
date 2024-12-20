@@ -6,8 +6,6 @@ import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
 
-import { Status } from "./text-sentiment"
-
 import { CircleAlertIcon, LoaderCircleIcon } from "lucide-react"
 
 function LoadingCard() {
@@ -28,6 +26,8 @@ export type AudioFile = {
   file: string
 }
 
+export type Status = "success" | "failed" | "idle"
+
 export default function AudioClassification() {
   const [isPending, startTransition] = React.useTransition()
   const [prediction, setPrediction] = React.useState<AudioPrediction>()
@@ -47,14 +47,13 @@ export default function AudioClassification() {
     const formData = new FormData()
     formData.append("audio", audioFile as Blob)
 
-    startTransition(async () => {
+    const fetchPrediction = async () => {
       try {
         const response = await fetch("http://localhost:8000/predict/audio", {
           method: "POST",
           body: formData,
         })
         const result = await response.json()
-
         setStatus("success")
         setPrediction({
           classes: result.prediction,
@@ -64,7 +63,10 @@ export default function AudioClassification() {
         setStatus("failed")
         console.error("Error:", error)
       }
-
+    }
+    
+    startTransition(() => {
+      fetchPrediction()
       addAudioToPlayer(audio)
     })
   }

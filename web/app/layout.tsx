@@ -8,7 +8,7 @@ import fonts from "@/app/font"
 
 
 export const metadata: Metadata = {
-  title: "Deep Learning",
+  title: "Gitar Classification",
   description: "Deep learning project",
 }
 
@@ -22,7 +22,7 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
     >
-      <body className={`${fonts.inter} ${fonts.rockSalt} antialiased`}>
+      <body className={`${Object.values(fonts).join(" ")} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
