@@ -2,7 +2,7 @@ import React from "react"
 
 import Image from "next/image"
 
-import Acoustic from "../assets/img/accoustic.png"
+import Acoustic from "../assets/img/image1.png"
 import Bass from "../assets/img/bass.png"
 import Ukulele from "../assets/img/ukelele.png"
 import L1 from "../assets/element/2.png"
@@ -48,8 +48,8 @@ const MainSection = () => {
         </button>
       </div>
       <div className="grid grid-cols-3 place-items-center gap-12 ">
-        <div className="relative flex h-72 w-3/4 items-center justify-center rounded-xl border bg-[#ffabde]">
-          <div className="absolute bottom-2 h-80 w-auto -rotate-12">
+        <div className="relative flex h-72 w-60 items-center justify-center rounded-xl border bg-[#ffabde]">
+          <div className="absolute bottom-2 h-80 w-auto">
             <Image
               className="max-h-full max-w-full object-contain"
               src={Acoustic}
