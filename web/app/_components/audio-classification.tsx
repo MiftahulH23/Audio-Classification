@@ -132,9 +132,9 @@ export default function AudioClassification() {
       <p className="mb-5 text-center text-3xl font-bold text-primary">
         Prediksi
       </p>
-      <div className="flex place-items-center gap-4 px-6">
-        <div className="flex h-80 w-[40%] flex-none flex-col justify-center gap-5 rounded-xl">
-          <p className="text-slate-500">
+      <div className="grid md:grid-cols-2 place-items-center gap-4 px-6">
+        <div className="flex h-40 w-full flex-col justify-center gap-5 rounded-xl">
+          <p className="text-slate-500 text-lg md:w-[90%] text-center md:text-start">
             Bisakah Anda mengenali suara akustik, bass, atau ukulele? Rasakan
             harmoninya dan tebak jenis gitar dari setiap petikan.
           </p>
@@ -178,7 +178,7 @@ export default function AudioClassification() {
             />
           </div> */}
         </div>
-        <div className="flex w-full flex-auto gap-4">
+        <div className="flex w-full flex-col gap-4">
           <form
             onSubmit={predict}
             className="flex w-full flex-col gap-3"

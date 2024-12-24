@@ -7,23 +7,12 @@ import Bass from "../assets/img/Bass2.jpg"
 import Ukulele from "../assets/img/UkueleImage.jpeg"
 import Acoustic from "../assets/img/accousticPantai.jpg"
 
-const togglePlayPause = () => {
-  if (audioRef.current) {
-    if (audioRef.current.paused) {
-      audioRef.current.play()
-      setIsPlay(true)
-    } else {
-      audioRef.current.pause()
-      setIsPlay(false)
-    }
-  }
-}
 
 const Label = () => {
   return (
     <div className="flex flex-col gap-6 px-6">
       <p className="text-center text-3xl font-bold text-primary mb-5">Label</p>
-      <div className="grid h-[500px] md:grid-cols-2 md:grid-rows-2 gap-5">
+      <div className="grid grid-cols-1 md:h-[500px] md:grid-cols-2 md:grid-rows-2 gap-5">
         {/* Accoustic */}
         <div className="relative size-full">
           <Image

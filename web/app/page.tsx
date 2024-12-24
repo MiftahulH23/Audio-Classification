@@ -16,7 +16,6 @@ export default function Page() {
   return (
     <div className="bg-white h-fit py-4 flex flex-col gap-8">
       <Header />
-      {/* <Home /> */}
       <MainSection />
       <DeepLearning />
       <Label />

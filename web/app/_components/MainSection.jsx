@@ -5,9 +5,9 @@ import Image from "next/image"
 import L1 from "../assets/element/2.png"
 import L2 from "../assets/element/8.png"
 import L3 from "../assets/element/9.png"
-import Bass from "../assets/img/bass.png"
-import Acoustic from "../assets/img/image1.png"
-import Ukulele from "../assets/img/ukelele.png"
+import Grafis1 from "../assets/img/3.png"
+import Grafis2 from "../assets/img/1.png"
+import Grafis3 from "../assets/img/5.png"
 
 const MainSection = () => {
   return (
@@ -64,29 +64,29 @@ const MainSection = () => {
         </button>
       </div>
       <div className="grid md:grid-cols-3 place-items-center gap-12 ">
-        <div className="relative flex h-72 w-60 items-center justify-center rounded-xl border bg-[#ffabde]">
-          <div className="absolute bottom-2 h-80 w-auto">
+        <div className="relative flex h-72 w-52 items-center justify-center rounded-xl border bg-[#ffabde]">
+          <div className="absolute h-80 w-auto">
             <Image
               className="max-h-full max-w-full object-contain"
-              src={Acoustic}
+              src={Grafis1}
               alt="Gitar Acoustic"
             />
           </div>
         </div>
-        <div className="relative flex h-56 w-full items-center justify-center rounded-xl border bg-[#d7c6ff] pb-8">
-          <div className="bottom-5 h-72 w-auto">
+        <div className="relative flex h-56 w-[85%] items-center justify-center rounded-xl border bg-[#d7c6ff] pb-8">
+          <div className="h-72 w-auto">
             <Image
               className="max-h-full max-w-full object-contain"
-              src={Ukulele}
+              src={Grafis2}
               alt="Gitar Acoustic"
             />
           </div>
         </div>
-        <div className="relative flex h-72 w-3/4 items-center justify-center rounded-xl border bg-[#fae180]">
-          <div className="absolute bottom-2 h-80 w-auto rotate-12">
+        <div className="relative flex h-72 w-52 items-center justify-center rounded-xl border bg-[#fae180]">
+          <div className=" h-80 w-auto">
             <Image
               className="max-h-full max-w-full object-contain"
-              src={Bass}
+              src={Grafis3}
               alt="Gitar Acoustic"
             />
           </div>
