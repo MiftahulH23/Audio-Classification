@@ -16,7 +16,7 @@ const MainSection = () => {
       <div className="hidden md:block">
         <Image
           src={L1}
-          className="absolute right-40 top-14 h-16 w-16 rotate-12 drop-shadow-xl"
+          className="absolute right-40 top-20 h-16 w-16 rotate-12 drop-shadow-xl"
           alt="L1"
         />
         <Image
@@ -26,7 +26,7 @@ const MainSection = () => {
         />
         <Image
           src={L3}
-          className="absolute right-72 top-28 h-16 w-16 -rotate-12 drop-shadow-xl"
+          className="absolute right-72 top-32 h-16 w-16 -rotate-12 drop-shadow-xl"
           alt="L3"
         />
       </div>

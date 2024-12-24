@@ -20,7 +20,7 @@ export default function Page() {
       <MainSection />
       <DeepLearning />
       <Label />
-      {/* <AudioClassification /> */}
+      <AudioClassification />
     </div>
     // <div className="flex h-dvh flex-col items-center justify-center p-4">
     //   <Header />
