@@ -5,8 +5,8 @@ import Image from "next/image"
 import L1 from "../assets/element/2.png"
 import L2 from "../assets/element/8.png"
 import L3 from "../assets/element/9.png"
-import Grafis1 from "../assets/img/3.png"
 import Grafis2 from "../assets/img/1.png"
+import Grafis1 from "../assets/img/3.png"
 import Grafis3 from "../assets/img/5.png"
 
 const MainSection = () => {
@@ -30,17 +30,15 @@ const MainSection = () => {
           alt="L3"
         />
       </div>
-      <div>
-
+      <div className="flex flex-col gap-3">
+        <p className="text-center font-montserrat text-3xl font-bold">
+          Setiap senar yang dipetik adalah cerita yang tak terucapkan <br /> dan
+          kami di sini untuk mendengarkan kisah itu
+        </p>
+        <p className="texs text-center text-sm">
+          Biarkan setiap petikan senar membawa pesan dari hatimu
+        </p>
       </div>
-      <p className="text-center font-montserrat text-3xl font-bold">
-        Setiap senar yang dipetik adalah cerita yang tak terucapkan <br /> dan
-        kami di sini untuk mendengarkan kisah itu
-      </p>
-      <p className="text-center text-sm">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-        odio.
-      </p>
       <div className="mb-10 flex justify-center">
         <button className="flex w-fit cursor-pointer items-center justify-center gap-3 rounded-xl bg-[#d7c6ff] px-4 py-2 font-semibold text-black">
           <p>Mulai Sekarang</p>
@@ -63,7 +61,7 @@ const MainSection = () => {
           </div>
         </button>
       </div>
-      <div className="grid md:grid-cols-3 place-items-center gap-12 ">
+      <div className="grid place-items-center gap-12 md:grid-cols-3 ">
         <div className="relative flex h-72 w-52 items-center justify-center rounded-xl border bg-[#ffabde]">
           <div className="absolute h-80 w-auto">
             <Image
