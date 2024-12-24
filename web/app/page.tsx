@@ -8,15 +8,17 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import MainSection from "./_components/MainSection"
 import Header from "./_components/Header"
 import Label from "./_components/Label"
+import DeepLearning from "./_components/DeepLearning"
 import Home from "./_components/Home"
 import AudioClassification from "./_components/audio-classification"
 
 export default function Page() {
   return (
-    <div className="bg-white h-fit px-6 py-4 flex flex-col gap-8">
+    <div className="bg-white h-fit py-4 flex flex-col gap-8">
       <Header />
-      <Home />
+      {/* <Home /> */}
       <MainSection />
+      <DeepLearning />
       <Label />
       {/* <AudioClassification /> */}
     </div>

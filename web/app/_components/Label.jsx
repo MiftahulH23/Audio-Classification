@@ -8,7 +8,7 @@ import Ukulele from "../assets/img/UkueleImage.jpeg"
 
 const Label = () => {
   return (
-    <>
+    <div className="px-6">
       <p className="text-center text-2xl font-bold text-primary">Label</p>
       <div className="grid h-[500px] grid-cols-2 grid-rows-2 gap-5">
         <div className="relative size-full">
@@ -33,7 +33,7 @@ const Label = () => {
         </div>
         <div className="size-full border bg-slate-500">3</div>
       </div>
-    </>
+    </div>
   )
 }
 

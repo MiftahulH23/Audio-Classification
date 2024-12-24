@@ -12,7 +12,7 @@ import L3 from "../assets/element/9.png"
 
 const MainSection = () => {
   return (
-    <div className="flex flex-col gap-6 relative">
+    <div className="flex flex-col gap-6 relative px-6">
       {/* element */}
       <Image src={L1} className="absolute top-14 right-40 rotate-12 size-16 drop-shadow-xl" />
       <Image src={L2} className="absolute top-20 left-40 -rotate-12 size-16 drop-shadow-xl" />
