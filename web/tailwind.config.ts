@@ -56,6 +56,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate, require('daisyui')],
+  plugins: [tailwindcssAnimate, require("daisyui")],
+  daisyui: {
+    themes: ["light"], // Ubah menjadi tema 'light'
+  },
 }
 export default config
