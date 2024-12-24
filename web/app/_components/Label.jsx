@@ -11,7 +11,7 @@ import Acoustic from "../assets/img/accousticPantai.jpg"
 const Label = () => {
   return (
     <div className="flex flex-col gap-6 px-6">
-      <p className="text-center text-3xl font-bold text-primary mb-5">Label</p>
+      <p className="text-center text-3xl font-bold text-black mb-5">Label</p>
       <div className="grid grid-cols-1 md:h-[500px] md:grid-cols-2 md:grid-rows-2 gap-5">
         {/* Accoustic */}
         <div className="relative size-full">

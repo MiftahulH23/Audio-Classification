@@ -33,7 +33,7 @@ const MainSection = () => {
       <div>
 
       </div>
-      <p className="text-center font-montserrat text-3xl font-bold italic">
+      <p className="text-center font-montserrat text-3xl font-bold">
         Setiap senar yang dipetik adalah cerita yang tak terucapkan <br /> dan
         kami di sini untuk mendengarkan kisah itu
       </p>
