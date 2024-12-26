@@ -17,7 +17,7 @@ const Team = () => {
         <div>
           <p className="text-xl font-bold">Miftahul Huda</p>
           <p className="text-slate-500 font-semibold">Frontend Developer</p>
-          <p className="text-sm text-slate-400 italic w-72">"Belajar itu penting, tapi jangan lupa makan. Mahasiswa yang lapar nggak bisa mikir!"</p>
+          <p className="text-sm text-slate-400 italic md:w-72">"Belajar itu penting, tapi jangan lupa makan. Mahasiswa yang lapar nggak bisa mikir!"</p>
         </div>
       </div>
       {/* Regina */}
@@ -25,7 +25,7 @@ const Team = () => {
         <div>
           <p className="text-end text-xl font-bold">Reghina Hafizah</p>
           <p className="text-end text-slate-500 font-semibold">Backend Developer</p>
-          <p className="text-sm text-slate-400 italic w-72 text-end">"Santai, kalau nilai jelek bisa diperbaiki, kalau kebahagiaan hilang, siapa yang balikin?"</p>
+          <p className="text-sm text-slate-400 italic md:w-72 text-end">"Santai, kalau nilai jelek bisa diperbaiki, kalau kebahagiaan hilang, siapa yang balikin?"</p>
         </div>
         <div className="avatar">
           <div className="w-36 h-52 rounded-full">
