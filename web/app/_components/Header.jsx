@@ -45,7 +45,7 @@ const Header = () => {
               <a>Prediksi</a>
             </li>
             <li>
-              <a>About</a>
+              <a>Team</a>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@ const Header = () => {
         <a href="#home">Home</a>
         <a href="#label">Label</a>
         <a href="#prediks">Prediksi</a>
-        <a href="#about">About</a>
+        <a href="#team">Team</a>
       </div>
     </div>
   )
