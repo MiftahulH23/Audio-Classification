@@ -54,7 +54,7 @@ export default function AudioClassification() {
 
     const fetchPrediction = async () => {
       try {
-        const response = await fetch("http://localhost:8000/predict/audio", {
+        const response = await fetch("http://localhost:8000/prediksi/gitar/audio", {
           method: "POST",
           body: formData,
         })
