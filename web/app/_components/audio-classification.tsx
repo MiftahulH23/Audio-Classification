@@ -23,7 +23,7 @@ function LoadingCard() {
 
 export type AudioPrediction = {
   classes: string
-  accuracy: string
+  accuracy: number
 }
 
 export type AudioFile = {
@@ -54,15 +54,20 @@ export default function AudioClassification() {
 
     const fetchPrediction = async () => {
       try {
-        const response = await fetch("http://localhost:8000/prediksi/gitar/audio", {
-          method: "POST",
-          body: formData,
-        })
+        const response = await fetch(
+          "http://localhost:8000/prediksi/gitar/audio",
+          {
+            method: "POST",
+            body: formData,
+          },
+        )
         const result = await response.json()
+        console.log(result)
+
         setStatus("success")
         setPrediction({
           classes: result.prediction,
-          accuracy: result.accuracy,
+          accuracy: parseFloat(result.accuracy) * 100,
         })
       } catch (error) {
         setStatus("failed")
@@ -128,45 +133,48 @@ export default function AudioClassification() {
   }, [audioRef.current])
 
   return (
-    <div id="prediksi" className="py-20">
+    <div
+      id="prediksi"
+      className="py-20"
+    >
       <p className="mb-10 text-center text-3xl font-bold text-black">
         Prediksi
       </p>
-      <div className="grid md:grid-cols-2 place-items-center gap-4 px-6">
+      <div className="grid place-items-center gap-4 px-6 md:grid-cols-2">
         <div className="flex h-40 w-full flex-col justify-center gap-5 rounded-xl">
-          <p className="text-slate-500 text-lg md:w-[90%] text-center md:text-start">
+          <p className="text-center text-lg text-slate-500 md:w-[90%] md:text-start">
             Bisakah Anda mengenali suara akustik, bass, atau ukulele? Rasakan
             harmoninya dan tebak jenis gitar dari setiap petikan.
           </p>
           <div className="flex gap-2">
             {/* 1 */}
-            <div className="flex items-center justify-center gap-1 bg-white px-2 py-1 rounded-xl shadow-xl">
+            <div className="flex items-center justify-center gap-1 rounded-xl bg-white px-2 py-1 shadow-xl">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#9a70ff] p-2">
                 <Tags />
               </div>
               <div>
                 <p className="text-sm font-semibold">3</p>
-                <p className="text-slate-400 text-[12px]">Label Audio</p>
+                <p className="text-[12px] text-slate-400">Label Audio</p>
               </div>
             </div>
             {/* 2 */}
-            <div className="flex items-center justify-center gap-1 bg-white px-2 py-1 rounded-xl shadow-xl">
+            <div className="flex items-center justify-center gap-1 rounded-xl bg-white px-2 py-1 shadow-xl">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#ffabde] p-2">
                 <Database />
               </div>
               <div>
                 <p className="text-sm font-semibold">1000+</p>
-                <p className="text-slate-400 text-[12px]">Dataset Audio</p>
+                <p className="text-[12px] text-slate-400">Dataset Audio</p>
               </div>
             </div>
             {/* 3 */}
-            <div className="flex items-center justify-center gap-1 bg-white px-2 py-1 rounded-xl shadow-xl">
+            <div className="flex items-center justify-center gap-1 rounded-xl bg-white px-2 py-1 shadow-xl">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#fde895] p-2">
                 <Akurasi />
               </div>
               <div>
                 <p className="text-sm font-semibold">99%</p>
-                <p className="text-slate-400 text-[12px]">Akurasi Model</p>
+                <p className="text-[12px] text-slate-400">Akurasi Model</p>
               </div>
             </div>
           </div>
@@ -243,6 +251,12 @@ export default function AudioClassification() {
                           Suara diprediksi sebagai gitar
                           <span className="ms-1 font-bold text-black">
                             {prediction.classes}
+                          </span>
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                          Akurasi Prediksi
+                          <span className="ms-1 font-bold text-black">
+                            {`${prediction.accuracy.toFixed(1)}%`}
                           </span>
                         </p>
                       </div>
