@@ -5,7 +5,7 @@ import Regina from "../assets/img/Regina.jpg"
 
 const Team = () => {
   return (
-    <div className="px-6 py-10">
+    <div id="team" className="px-6 py-20">
       <p className="text-center text-3xl font-bold text-black mb-8">Team</p>
       {/* Raul */}
       <div className="flex items-center gap-5">

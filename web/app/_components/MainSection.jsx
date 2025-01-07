@@ -11,22 +11,22 @@ import Grafis3 from "../assets/img/5.png"
 
 const MainSection = () => {
   return (
-    <div className="relative flex flex-col gap-6 px-6">
+    <div id="home" className="relative flex flex-col gap-6 px-6 pb-20 pt-10">
       {/* element */}
       <div className="hidden md:block">
         <Image
           src={L1}
-          className="absolute right-40 top-20 h-16 w-16 rotate-12 drop-shadow-xl"
+          className="absolute right-40 top-40 h-16 w-16 rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
           alt="L1"
         />
         <Image
           src={L2}
-          className="absolute left-40 top-20 h-16 w-16 -rotate-12 drop-shadow-xl"
+          className="absolute left-40 top-40 h-16 w-16 -rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
           alt="L2"
         />
         <Image
           src={L3}
-          className="absolute right-72 top-32 h-16 w-16 -rotate-12 drop-shadow-xl"
+          className="absolute right-72 top-56 h-16 w-16 -rotate-12 drop-shadow-xl"
           alt="L3"
         />
       </div>
@@ -40,7 +40,7 @@ const MainSection = () => {
         </p>
       </div>
       <div className="mb-10 flex justify-center">
-        <button className="flex w-fit cursor-pointer items-center justify-center gap-3 rounded-xl bg-[#d7c6ff] px-4 py-2 font-semibold text-black">
+        <a href="#prediksi" className="flex w-fit cursor-pointer items-center justify-center gap-3 rounded-xl bg-[#d7c6ff] px-4 py-2 font-semibold text-black">
           <p>Mulai Sekarang</p>
           <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white">
             <svg
@@ -59,7 +59,7 @@ const MainSection = () => {
               <path d="m12 5 7 7-7 7" />
             </svg>
           </div>
-        </button>
+        </a>
       </div>
       <div className="grid place-items-center gap-12 md:grid-cols-3 ">
         <div className="relative flex h-72 w-52 items-center justify-center rounded-xl border bg-[#ffabde]">

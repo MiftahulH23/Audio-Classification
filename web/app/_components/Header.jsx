@@ -36,26 +36,26 @@ const Header = () => {
             className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a>Label</a>
+              <a href="#label">Label</a>
             </li>
             <li>
-              <a>Prediksi</a>
+              <a href="#prediksi">Prediksi</a>
             </li>
             <li>
-              <a>Team</a>
+              <a href="#team">Team</a>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Navbar End for larger devices */}
-      <div className="navbar-end hidden sm:flex font-semibold text-black flex gap-5">
+      <div className="navbar-end flex hidden gap-5 font-semibold text-black sm:flex">
         <a href="#home">Home</a>
         <a href="#label">Label</a>
-        <a href="#prediks">Prediksi</a>
+        <a href="#prediksi">Prediksi</a>
         <a href="#team">Team</a>
       </div>
     </div>

@@ -128,7 +128,7 @@ export default function AudioClassification() {
   }, [audioRef.current])
 
   return (
-    <div>
+    <div id="prediksi" className="py-20">
       <p className="mb-5 text-center text-3xl font-bold text-black">
         Prediksi
       </p>

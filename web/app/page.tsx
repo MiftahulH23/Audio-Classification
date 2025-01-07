@@ -16,7 +16,7 @@ import AudioClassification from "./_components/audio-classification"
 
 export default function Page() {
   return (
-    <div className="bg-white h-fit py-4 flex flex-col gap-20">
+    <div className="bg-white h-fit py-4 flex flex-col">
       <Header />
       <MainSection />
       <DeepLearning />
