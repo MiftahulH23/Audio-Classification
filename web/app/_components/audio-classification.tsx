@@ -129,7 +129,7 @@ export default function AudioClassification() {
 
   return (
     <div id="prediksi" className="py-20">
-      <p className="mb-5 text-center text-3xl font-bold text-black">
+      <p className="mb-10 text-center text-3xl font-bold text-black">
         Prediksi
       </p>
       <div className="grid md:grid-cols-2 place-items-center gap-4 px-6">

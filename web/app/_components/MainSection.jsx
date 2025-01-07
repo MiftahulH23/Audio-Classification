@@ -11,22 +11,22 @@ import Grafis3 from "../assets/img/5.png"
 
 const MainSection = () => {
   return (
-    <div id="home" className="relative flex flex-col gap-6 px-6 pb-20 pt-10">
+    <div id="home" className="relative flex flex-col gap-6 px-6 pb-20 pt-16">
       {/* element */}
       <div className="hidden md:block">
         <Image
           src={L1}
-          className="absolute right-40 top-40 h-16 w-16 rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
+          className="absolute right-40 top-36 h-16 w-16 rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
           alt="L1"
         />
         <Image
           src={L2}
-          className="absolute left-40 top-40 h-16 w-16 -rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
+          className="absolute left-40 top-36 h-16 w-16 -rotate-12 drop-shadow-xl animate-bounce duration-1000 drop-shadow-xl"
           alt="L2"
         />
         <Image
           src={L3}
-          className="absolute right-72 top-56 h-16 w-16 -rotate-12 drop-shadow-xl"
+          className="absolute right-72 top-48 h-16 w-16 -rotate-12 drop-shadow-xl"
           alt="L3"
         />
       </div>

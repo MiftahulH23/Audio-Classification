@@ -2,12 +2,11 @@ import React from "react"
 
 const Header = () => {
   return (
-    <div className="navbar flex justify-between bg-base-100 bg-white px-6 md:px-8">
+    <div className="navbar flex justify-between bg-base-100 bg-white px-6 md:px-8 fixed top-0 w-full z-[1000]">
       {/* Navbar Start */}
-      <div className="navbar-start">
+      <a href="#home" className="navbar-start">
         <p className="font-rock-salt text-xl text-primary">Rawr</p>
-      </div>
-
+      </a>
       {/* Navbar End */}
       <div className="navbar-end md:hidden">
         <div className="dropdown dropdown-left">
